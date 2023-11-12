@@ -34,8 +34,6 @@ void latchTx(uint8_t latch_state)
 {
   digitalWrite(MOTORLATCH, LOW);
   digitalWrite(MOTORDATA, LOW);
-  //Serial.print("Latch=");
-  //Serial.println(latch_state, BIN);
   for (uint8_t i = 0; i < 8; i++)
   {
     digitalWrite(MOTORCLK, LOW);
