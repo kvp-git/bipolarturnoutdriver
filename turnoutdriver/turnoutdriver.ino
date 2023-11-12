@@ -103,14 +103,9 @@ void setup()
   for (uint8_t i = 0; i < MOTOR_NUM; i++)
   {
     pinMode(outputs[i][2], OUTPUT);
-    digitalWrite(outputs[i][2], HIGH);
+    digitalWrite(outputs[i][2], LOW);
   }
-  latchTx(
-    (1<<MOTOR1_B) |
-    (1<<MOTOR2_B) |
-    (1<<MOTOR3_B) |
-    (1<<MOTOR4_B)
-    );
+  latchTx(0);
   for (uint8_t i = 0; i < INPUT_NUM; i++)
     pinMode(inputs[i], INPUT_PULLUP);
   delay(1000);
