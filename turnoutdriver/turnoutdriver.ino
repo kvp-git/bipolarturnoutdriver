@@ -3,7 +3,7 @@
 // by KVP in 2023 (license: CC BY-NC-SA)
 
 // timing values
-#define PULSE_TIME1 (100)  // coil on pulse time TODO!!! change this from debug pulse to actual timing
+#define PULSE_TIME1 (50)   // coil on pulse time
 #define PULSE_TIME2 (200)  // coil off pulse time
 #define WAIT_TIME1  (100)  // wait time for button release
 #define WAIT_TIME2  (1000) // wait time between pulses
